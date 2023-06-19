@@ -35,9 +35,9 @@ import win32com.client as wincl
 from urllib.request import urlopen
 
 
-print("Donut Assistant 12.4.0")
+print("Donut Assistant 12.5.0")
 print("Assistant for PCs")
-print("Donut Corp @ 2022")
+print("Donut Open Source Software Projects - Gautham Nair @ 2023")
 
 assistanttype = input("Please Select any one: \n \t 1.Donut Assistant Mike \n \t 2.Donut Assistant Annie \n \t 3.Donut Assistant Chloe \n : ")
 default_engine = input("Select a default search engine: \n \t Google \n \t Bing \n")
