@@ -6,28 +6,14 @@ import webbrowser
 import os
 import smtplib
 import requests
-import json
 import wolframalpha
 import subprocess
-import wolframalpha
 import pyttsx3
-import tkinter
-import json
-import random
-import operator
-import speech_recognition as sr
-import datetime
-import wikipedia
-import webbrowser
-import os
-import winshell
 import pyjokes
 import feedparser
 import smtplib
-import ctypes
 import time
 import requests
-import shutil
 from twilio.rest import Client
 from clint.textui import progress
 from bs4 import BeautifulSoup
@@ -128,7 +114,7 @@ if assistanttype == "1":
                 print(results)
                 speak(results)
 
-            
+
             elif 'question' in query:
                 speak('I can answer to computational and geographical questions  and what question do you want to ask now')
                 question=takeCommand()
@@ -172,7 +158,7 @@ if assistanttype == "1":
                 print("Have a Nice Day:)")
 
             elif "calculate" in query:
-             
+
                 app_id = "Wolframalpha api id"
                 client = wolframalpha.Client(app_id)
                 indx = query.lower().split().index('calculate')
@@ -181,7 +167,7 @@ if assistanttype == "1":
                 answer = next(res.results).text
                 print("The answer is " + answer)
                 speak("The answer is " + answer)
-                
+
             elif 'open youtube' in query:
                 speak('OK, I will open YouTube in your default browser')
                 webbrowser.open("youtube.com")
@@ -354,7 +340,7 @@ if assistanttype == "1":
 
             elif 'do you know bixby' in query:
                 speak("Yes, I know her, I want to be famous like her one day")
-            
+
             elif 'who is your favourite artist' in query:
                 print("Michael Jackson")
                 speak('No doubt,, its michael jackson')
@@ -379,7 +365,7 @@ if assistanttype == "1":
             elif "log off" in query or "sign out" in query:
                 speak("Ok , your pc will log off in 10 sec make sure you exit from all applications")
                 subprocess.call(["shutdown", "/l"])
-			
+
     time.sleep(3)
 
 elif assistanttype == "2":
@@ -469,7 +455,7 @@ elif assistanttype == "2":
                 print(results)
                 speak(results)
 
-            
+
             elif 'question' in query:
                 speak('I can answer to computational and geographical questions  and what question do you want to ask now')
                 question=takeCommand()
@@ -513,7 +499,7 @@ elif assistanttype == "2":
                 print("Have a Nice Day:)")
 
             elif "calculate" in query:
-             
+
                 app_id = "Wolframalpha api id"
                 client = wolframalpha.Client(app_id)
                 indx = query.lower().split().index('calculate')
@@ -696,7 +682,7 @@ elif assistanttype == "2":
 
             elif 'do you know bixby' in query:
                 speak("Yes, I know her, I want to be famous like her one day")
-            
+
             elif 'who is your favourite artist' in query:
                 print("Michael Jackson")
                 speak('No doubt,, its michael jackson')
@@ -721,7 +707,7 @@ elif assistanttype == "2":
             elif "log off" in query or "sign out" in query:
                 speak("Ok , your pc will log off in 10 sec make sure you exit from all applications")
                 subprocess.call(["shutdown", "/l"])
-			
+
     time.sleep(3)
 
 elif assistanttype == "3":
@@ -811,7 +797,7 @@ elif assistanttype == "3":
                 print(results)
                 speak(results)
 
-            
+
             elif 'question' in query:
                 speak('I can answer to computational and geographical questions  and what question do you want to ask now')
                 question=takeCommand()
@@ -855,7 +841,7 @@ elif assistanttype == "3":
                 print("Have a Nice Day:)")
 
             elif "calculate" in query:
-             
+
                 app_id = "Wolframalpha api id"
                 client = wolframalpha.Client(app_id)
                 indx = query.lower().split().index('calculate')
@@ -907,7 +893,7 @@ elif assistanttype == "3":
             elif 'text to speech' in query:
                 text = input("Type: ")
                 speak(text)
-                
+
             elif 'when is your birthday' in query:
                 print("1st March 2022")
                 speak('I made my debut on 1st March 2022')
@@ -1036,7 +1022,7 @@ elif assistanttype == "3":
 
             elif 'do you know bixby' in query:
                 speak("Yes, I know her, I want to be famous like her one day")
-            
+
             elif 'who is your favourite artist' in query:
                 print("Michael Jackson")
                 speak('No doubt,, its michael jackson')
@@ -1061,9 +1047,8 @@ elif assistanttype == "3":
             elif "log off" in query or "sign out" in query:
                 speak("Ok , your pc will log off in 10 sec make sure you exit from all applications")
                 subprocess.call(["shutdown", "/l"])
-                            
-    time.sleep(3)
 
+    time.sleep(3)
 
 
 
