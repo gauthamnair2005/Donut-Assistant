@@ -1,5 +1,5 @@
 # Support for Donut Assistant is ended, check out DonutAI instead
-# [DEPRICATED] Donut-Assistant
+# [DEPRECATED] Donut-Assistant
 A virtual Assistant for PC written in Python by Gautham Nair
 
 
